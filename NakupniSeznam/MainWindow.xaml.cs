@@ -34,6 +34,9 @@ namespace NakupniSeznam
             string json = JsonConvert.SerializeObject(example);
 
             File.WriteAllText($"{Environment.CurrentDirectory}/file.json", json);
+
+            MessageBox.Show("Uloženo");
+            txtName.Text = "";
         }
 
         private void load_Click(object sender, RoutedEventArgs e)
@@ -45,7 +48,7 @@ namespace NakupniSeznam
                 string js = File.ReadAllText(filePath);
                 JsonExample example = JsonConvert.DeserializeObject<JsonExample>(js);
 
-                txtName.Text = example.Name;
+                txtVypis.Text = example.Name;
             }
             else
             {

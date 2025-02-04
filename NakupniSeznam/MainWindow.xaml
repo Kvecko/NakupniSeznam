@@ -1,0 +1,31 @@
+﻿<Window x:Class="NakupniSeznam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NakupniSeznam"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Zadej položku:"/>
+        <TextBox x:Name="txtName" Grid.Row="1"/>
+
+        <Button x:Name="save" Click="save_Click" ClickMode="Release" Content="Uložit" Grid.Row="4"/>
+        <Button x:Name="load" Click="load_Click" ClickMode="Release" Content="Načíst" Grid.Row="5"/>
+        <Button x:Name="delete" Click="delete_Click" ClickMode="Release" Content="Smazat" Grid.Row="5"/>
+
+    </Grid>
+</Window>

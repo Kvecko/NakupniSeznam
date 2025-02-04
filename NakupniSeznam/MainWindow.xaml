@@ -15,17 +15,14 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
         <Label Content="Zadej položku:"/>
         <TextBox x:Name="txtName" Grid.Row="1"/>
 
-        <Button x:Name="save" Click="save_Click" ClickMode="Release" Content="Uložit" Grid.Row="4"/>
-        <Button x:Name="load" Click="load_Click" ClickMode="Release" Content="Načíst" Grid.Row="5"/>
-        <Button x:Name="delete" Click="delete_Click" ClickMode="Release" Content="Smazat" Grid.Row="5"/>
+        <Button x:Name="save" Click="save_Click" ClickMode="Release" Content="Uložit" Grid.Row="2"/>
+        <Button x:Name="load" Click="load_Click" ClickMode="Release" Content="Načíst" Grid.Row="3"/>
+        <Button x:Name="delete" Click="delete_Click" ClickMode="Release" Content="Smazat" Grid.Row="4"/>
 
     </Grid>
 </Window>
